@@ -23,7 +23,7 @@ header img {
     width: 160px; /* Tamaño de la imagen */
     height: 160px;
     border-radius: 50%; /* La hace circular */
-    border: 3px solid #BB86FC; /* Borde morado claro */
+    border: 3px solid #8b6db1; /* Borde morado claro */
     margin-top: 20px; /* Separación superior */
     transition: transform 0.3s ease; /* Animación suave al pasar el mouse */
 }
