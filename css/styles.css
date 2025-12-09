@@ -1,0 +1,131 @@
+/* ===== CONFIGURACIÓN GENERAL ===== */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente base del sitio */
+    background-color: #0D0D1A; /* Color de fondo oscuro */
+    color: #EAEAEA; /* Color del texto principal */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    line-height: 1.6; /* Espaciado entre líneas para mejor lectura */
+}
+
+/* ===== ENCABEZADO ===== */
+header {
+    background: linear-gradient(135deg, #3B0CA0, #2C0080, #1E0E62); /* Gradiente morado-azulado */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 50px 20px; /* Espaciado interno */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* Sombra inferior */
+    animation: fadeIn 1.2s ease; /* Animación de entrada */
+}
+
+/* Imagen del encabezado (foto de perfil) */
+header img {
+    width: 160px; /* Tamaño de la imagen */
+    height: 160px;
+    border-radius: 50%; /* La hace circular */
+    border: 3px solid #BB86FC; /* Borde morado claro */
+    margin-top: 20px; /* Separación superior */
+    transition: transform 0.3s ease; /* Animación suave al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse sobre la imagen */
+header img:hover {
+    transform: scale(1.1); /* Agranda un poco la foto */
+}
+
+/* Subtítulo debajo del nombre */
+.subtitulo {
+    font-size: 18px; /* Tamaño del texto */
+    color: #C8BFFF; /* Color morado suave */
+    opacity: 0.9; /* Ligera transparencia */
+}
+
+/* ===== SECCIONES ===== */
+section {
+    background: #181828; /* Fondo de cada sección */
+    margin: 30px auto; /* Separación entre secciones */
+    padding: 25px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 800px; /* Ancho máximo de la caja */
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3); /* Sombra alrededor */
+    animation: fadeInUp 1s ease; /* Animación de aparición */
+}
+
+/* Títulos de cada sección */
+h2 {
+    color: #BB86FC; /* Morado principal */
+    border-left: 4px solid #BB86FC; /* Línea decorativa a la izquierda */
+    padding-left: 10px; /* Separación entre línea y texto */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+/* ===== LISTAS ===== */
+ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+}
+
+/* Cada elemento de la lista */
+ul li {
+    background: #252540; /* Fondo oscuro para cada habilidad */
+    margin: 8px 0; /* Separación entre ítems */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 6px; /* Bordes redondeados */
+}
+
+/* ===== PROYECTOS ===== */
+.proyecto {
+    background: #1E1E36; /* Fondo más claro que el resto */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: 15px; /* Espacio entre proyectos */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse sobre los proyectos */
+.proyecto:hover {
+    transform: translateY(-5px); /* Mueve el bloque hacia arriba */
+    box-shadow: 0 6px 20px rgba(187, 134, 252, 0.3); /* Sombra luminosa morada */
+}
+
+/* ===== BOTONES ===== */
+button, .btn {
+    background: #5B21B6; /* Morado oscuro */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Tamaño del botón */
+    margin: 10px 5px; /* Espaciado externo */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    text-decoration: none; /* Quita subrayado de los enlaces */
+    font-weight: bold; /* Negrita */
+    transition: background 0.3s, transform 0.2s; /* Animación suave */
+}
+
+/* Efecto hover (cuando el mouse pasa encima) */
+button:hover, .btn:hover {
+    background: #7C3AED; /* Morado más claro */
+    transform: scale(1.05); /* Efecto de agrandar */
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+    text-align: center; /* Centra el texto */
+    background: #0C0C15; /* Fondo oscuro del pie */
+    color: #A0A0C0; /* Texto gris suave */
+    padding: 15px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño del texto */
+    margin-top: 40px; /* Separación con el contenido anterior */
+    border-top: 2px solid #3B0CA0; /* Línea superior morada */
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes fadeIn {
+    from { opacity: 0; } /* Comienza invisible */
+    to { opacity: 1; } /* Termina visible */
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(25px); } /* Desplazado hacia abajo */
+    to { opacity: 1; transform: translateY(0); } /* Vuelve a su posición normal */
+}
